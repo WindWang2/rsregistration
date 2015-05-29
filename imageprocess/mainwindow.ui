@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>542</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数字图像处理（尝鲜版）</string>
+  </property>
+  <widget class="QWidget" name="ViewWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>542</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_Open"/>
+    <addaction name="action_Save_As"/>
+    <addaction name="separator"/>
+    <addaction name="action_QUIT"/>
+   </widget>
+   <widget class="QMenu" name="menuOperate">
+    <property name="title">
+     <string>Operate</string>
+    </property>
+    <widget class="QMenu" name="menuFFT">
+     <property name="title">
+      <string>FFT</string>
+     </property>
+     <widget class="QMenu" name="menuFilter">
+      <property name="title">
+       <string>Filter</string>
+      </property>
+      <addaction name="actionHigh_Pass"/>
+      <addaction name="actionLow_Pass"/>
+     </widget>
+     <addaction name="actionFFT_2"/>
+     <addaction name="actionNFFT_2"/>
+     <addaction name="menuFilter"/>
+    </widget>
+    <addaction name="menuFFT"/>
+    <addaction name="separator"/>
+    <addaction name="actionHistogram_equalization"/>
+    <addaction name="actionChannels"/>
+    <addaction name="actionTest"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOperate"/>
+  </widget>
+  <action name="action_Open">
+   <property name="text">
+    <string>&amp;Open Image</string>
+   </property>
+  </action>
+  <action name="action_QUIT">
+   <property name="text">
+    <string>&amp;QUIT</string>
+   </property>
+  </action>
+  <action name="action_Save_As">
+   <property name="text">
+    <string>&amp;Save As</string>
+   </property>
+  </action>
+  <action name="actionNFFT">
+   <property name="text">
+    <string>nFFT</string>
+   </property>
+  </action>
+  <action name="actionHistogram_equalization">
+   <property name="text">
+    <string>Histogram equalization</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Match">
+   <property name="text">
+    <string>Histogram Match</string>
+   </property>
+  </action>
+  <action name="actionFFT_2">
+   <property name="text">
+    <string>FFT</string>
+   </property>
+  </action>
+  <action name="actionNFFT_2">
+   <property name="text">
+    <string>nFFT</string>
+   </property>
+  </action>
+  <action name="actionTest">
+   <property name="text">
+    <string>test</string>
+   </property>
+  </action>
+  <action name="actionChannels">
+   <property name="text">
+    <string>Channels</string>
+   </property>
+  </action>
+  <action name="actionHigh_Pass">
+   <property name="text">
+    <string>High Pass</string>
+   </property>
+  </action>
+  <action name="actionLow_Pass">
+   <property name="text">
+    <string>Low Pass</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
