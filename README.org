@@ -1,3 +1,7 @@
 * This project is for RS images's registrition
-** Introduction
-** END
+** Name: Remote sensing image Registration Library (RRL).
+** Function: The framwork of remote sensing image registration, image display widget by Qt and Image Quality assessment.
+** Cross-platform, tested by Mac os and Linux.
+** Language: C++
+** Foundation: GDAL, Qt and boost C++ Libraries.
+* END
